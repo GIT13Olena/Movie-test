@@ -1,6 +1,4 @@
-
-// reducers.js
-import { ADD_TO_FAVORITES, REMOVE_FROM_FAVORITES, ADD_MOVIE } from '../action/action';
+import { ADD_TO_FAVORITES, REMOVE_FROM_FAVORITES, ADD_MOVIE, EDIT_MOVIE, REMOVE_FROM_MOVIES } from '../action/action';
 
 const initialState = {
   favorites: [],
@@ -385,6 +383,17 @@ export const favoritesReducer = (state = initialState, action) => {
     case ADD_MOVIE:
       newState = { ...state, movies: [...state.movies, action.payload] };
       break;
+    case EDIT_MOVIE:
+      newState = {
+        ...state,
+        movies: state.movies.map(movie => movie.id === action.payload.id ? action.payload : movie)
+      };
+      break;
+      case REMOVE_FROM_MOVIES:
+        return {
+            ...state,
+            movies: state.movies.filter(movie => movie.id !== action.payload.id)
+        };
     default:
       return state;
   }

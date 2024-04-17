@@ -1,0 +1,41 @@
+.movie__all{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 50px;
+    list-style-type: none;
+    margin-top: 30px;
+    padding: 0 10px;
+}
+
+.movie__link{
+    color: black;
+    text-decoration: none;
+}
+
+.poster{
+    width: 250px;
+    height: 350px;
+}
+
+.movie__title{
+    width: 200px;
+    margin: 0;
+}
+
+.button__remove{
+    border-radius: 15px;
+        border: 1px solid red;
+        background-color: #fff; 
+        color: red; 
+        padding: 5px 5px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out; 
+}
+
+.button__remove:hover{
+    background-color: red; 
+    color: #fff;
+}

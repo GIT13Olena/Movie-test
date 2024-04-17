@@ -4,7 +4,9 @@ import header from './Header.module.css';
 function Header() {
     return(
         <header className={header.header}>
-            <h1 className={header.header__title}>Movie</h1>
+            <NavLink to="/" className={header.header__nav_link}>
+               <h1 className={header.header__title}>Movie</h1>
+            </NavLink>
             <nav className={header.header__navigation}>
             <NavLink to="/" className={header.header__nav_link}>
                 <strong>Home</strong>

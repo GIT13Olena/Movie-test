@@ -1,5 +1,7 @@
+import { NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
 import { removeFromFavorites } from '../../redux/action/action';
+import favorite from './FavoritePage.module.css';
 
 function FavoritePage() {
   const favorites = useSelector(state => state.favorites);
@@ -10,17 +12,21 @@ function FavoritePage() {
   };
 
   return (
-    <div>
+    <div className={favorite.movie__all}>
       {favorites.map((movie) => (
-        <div key={movie.id}>
-            <img src={movie.image} alt={movie.title} />
-          <h2>{movie.title}</h2>
-          <p>Рейтинг: {movie.rating}</p>
-            <p>Дата випуску: {movie.release_date}</p>
-          <button onClick={() => handleRemoveFromFavorites(movie.id)}>
-            Видалити з фаворитів
+        <>
+        <div key={movie.id}> 
+        <NavLink to={`/movie/${movie.id}`} className={favorite.movie__link}>
+            <img src={movie.image} alt={movie.title} className={favorite.poster}/>
+          <h2 className={favorite.movie__title}>{movie.title}</h2>
+          <p>Rating: {movie.rating}</p>
+            <p>Release date: {movie.release_date}</p>
+            </NavLink>
+          <button onClick={() => handleRemoveFromFavorites(movie.id)} className={favorite.button__remove}>
+          Remove from favorites 
           </button>
-        </div>
+          </div>
+          </>
       ))}
     </div>
   );
