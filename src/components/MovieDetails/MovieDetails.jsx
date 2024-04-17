@@ -18,8 +18,8 @@ function MovieDetails() {
       <p>{movie.description}</p>
       <p>Рейтинг: {movie.rating}</p>
       <p>Дата випуску: {movie.release_date}</p>
-      <p>Жанр: {movie.genre.join(', ')}</p>
-      <p>Актори: {movie.actors.join(', ')}</p>
+      <p>Жанр: {movie.genre}</p>
+      <p>Актори: {movie.actors}</p>
       <p>Режисер: {movie.director}</p>
     </div>
   );

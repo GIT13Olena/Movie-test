@@ -25,7 +25,8 @@ function AddMovie() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        dispatch({ type: 'ADD_MOVIE', payload: newMovie });
+        const uniqueId = Date.now();
+        dispatch({ type: 'ADD_MOVIE', payload: { ...newMovie, id: uniqueId } });
         setNewMovie({
             id: '',
             title: '',
