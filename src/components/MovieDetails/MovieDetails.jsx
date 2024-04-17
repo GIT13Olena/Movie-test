@@ -1,9 +1,11 @@
+import React from 'react';
+import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import moviesData from '../db.json';
 
 function MovieDetails() {
   const { id } = useParams();
-  const movie = moviesData.movies.find(movie => movie.id === Number(id));
+  const moviesData = useSelector(state => state.movies);
+  const movie = moviesData.find(movie => movie.id === Number(id));
 
   if (!movie) {
     return <p>Фільм не знайдено</p>;

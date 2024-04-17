@@ -1,5 +1,6 @@
 export const ADD_TO_FAVORITES = 'ADD_TO_FAVORITES';
 export const REMOVE_FROM_FAVORITES = 'REMOVE_FROM_FAVORITES';
+export const ADD_MOVIE = 'ADD_MOVIE';
 
 export const addToFavorites = (movie) => ({
   type: ADD_TO_FAVORITES,
@@ -9,4 +10,9 @@ export const addToFavorites = (movie) => ({
 export const removeFromFavorites = (movieId) => ({
   type: REMOVE_FROM_FAVORITES,
   payload: movieId,
+});
+
+export const addMovie = (movie) => ({
+  type: ADD_MOVIE,
+  payload: movie,
 });
