@@ -127,7 +127,7 @@ const initialState = {
           "Ian McKellen"
       ],
       "director": "Peter Jackson",
-      "image": "https://upload.wikimedia.org/wikipedia/en/2/23/The_Lord_of_the_Rings%2C_TROTK_%282003%29.jpg"
+      "image": " https://m.media-amazon.com/images/M/MV5BNDgwY2YyNjctZTMxZC00ZTRlLThhN2QtMTAwYjUyODcyZDYxXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_FMjpg_UX1000_.jpg"
   },
   {
       "id": 8,
@@ -238,7 +238,7 @@ const initialState = {
           "Orlando Bloom"
       ],
       "director": "Peter Jackson",
-      "image": "https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings%2C_TFOTR_%282001%29.jpg"
+      "image": " https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg"
   },
   {
       "id": 14,
@@ -257,7 +257,7 @@ const initialState = {
           "Viggo Mortensen"
       ],
       "director": "Peter Jackson",
-      "image": "https://upload.wikimedia.org/wikipedia/en/f/fc/The_Lord_of_the_Rings%2C_T2T_%282002%29.jpg"
+      "image": " https://m.media-amazon.com/images/M/MV5BZTUxNzg3MDUtYjdmZi00ZDY1LTkyYTgtODlmOGY5N2RjYWUyXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_FMjpg_UX1000_.jpg"
   },
   {
       "id": 15,
