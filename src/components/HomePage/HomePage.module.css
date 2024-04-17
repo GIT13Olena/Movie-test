@@ -1,25 +1,15 @@
 .movie{
-    display: flex;
-    flex-flow: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 270px);
+    gap: 40px 30px ;
     justify-content: center;
-    gap: 30px;
-    row-gap: 128px;
-    list-style-type: none;
-    margin-top: 30px;
-    padding: 0 10px;
+    margin-top: 20px;
 }
 
 .movie__search{
     margin: 20px 0 0 0;
     padding: 8px;
     border: 2px solid black;
-}
-
-.movie__card{
-    border-radius: 20px;
-    width: 220px;
-    height: 400px;
-    padding: 15px;
 }
 
 .movie__link{

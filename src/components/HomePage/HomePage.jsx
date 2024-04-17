@@ -35,7 +35,7 @@ function HomePage() {
             <input type="text" value={searchTerm} onChange={handleSearchChange} placeholder="Search movie..." className={home.movie__search}/>
             <div className={home.movie}>
                 {filteredMovies.map((movie) => (
-                    <div key={movie.id} className={home.movie__card}>
+                    <div key={movie.id} >
                         <NavLink to={`/movie/${movie.id}`} className={home.movie__link}>
                             <img src={movie.image} alt={movie.title} className={home.movie__poster}/>
                             <h2 className={home.movie__title}>{movie.title}</h2>
